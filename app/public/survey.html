@@ -1,141 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <title>Survey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>Survey</title>
 </head>
+
 <body>
 
-   <div class="container">
+    <div class="container">
+        <form id="form_survey">
 
-               <h2>Survey Questions</h2>
-               <hr>
+            <h2>Survey Questions</h2>
+            <hr>
 
-               <h3><strong>About You
-                       (answer each question with the numbers 1 to 5, 1 being the least and 5 being the most)
-               </strong></h3>
-               <br></br>
-               <h4>Name (Required)</h4>
-               <input class="form-control" id="name" required="" type="text">
+            <h3>
+                <strong>About You
+                    (answer each question with the numbers 1 to 5, 1 being the least and 5 being the most)
+                </strong>
+            </h3>
+            <br></br>
+            <h4>Name (Required)</h4>
+            <input class="form-control" id="name" required="" type="text">
 
-               <h4>Link to Photo Image (Required)</h4>
-               <input class="form-control" id="photo" required="" type="text">
+            <h4>Link to Photo Image (Required)</h4>
+            <input class="form-control" id="photo" required="" type="text">
 
-               <hr>
+            <hr>
 
-               <h3><strong>Question 1</strong></h3>
-               <h4>Do you like to travel?</h4>
-               <select class="chosen-select" id="q1" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (I love it !!)</option>
-               </select>
-               <div title="" class="chosen-container chosen-container-single" id="q1_chosen" style="width: 157px;">
-                <a class="chosen-single chosen-default">
-                    <span>Select an Option</span>
-                    <div>
-                        <b></b>
-                    </div>
-                </a>
-                <div class="chosen-drop">
-                    <div class="chosen-search">
-                        <input class="chosen-search-input" type="text" autocomplete="off">
-                    </div>
-                    <ul class="chosen-results"></ul>
-                </div>
-            </div>
-
-               <h3><strong>Question 2</strong></h3>
-               <h4>Do you like exercising?</h4>
-               <select class="chosen-select" id="q2" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (I love it)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q2_chosen" style="width: 157px;">
-                <a class="chosen-single chosen-default">
-                    <span>Select an Option</span>
-                    <div>
-                        <b></b>
-                    </div>
-                </a>
-                <div class="chosen-drop">
-                    <div class="chosen-search">
-                        <input class="chosen-search-input" type="text" autocomplete="off">
-                    </div>
-                    <ul class="chosen-results"></ul>
-                </div>
-            </div>
-
-
-               <h3><strong>Question 3</strong></h3>
-               <h4> Do you believe in love at first sight ?</h4>
-               <select class="chosen-select" id="q3" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (Hell, yes!!)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q3_chosen" style="width: 157px;">
-                <a class="chosen-single chosen-default">
-                    <span>Select an Option</span>
-                    <div>
-                        <b></b>
-                    </div>
-                </a>
-                <div class="chosen-drop">
-                    <div class="chosen-search">
-                        <input class="chosen-search-input" type="text" autocomplete="off">
-                    </div>
-                    <ul class="chosen-results"></ul>
-                </div>
-            </div>
-
-
-               <h3><strong>Question 4</strong></h3>
-               <h4>Do you like animals ?</h4>
-               <select class="chosen-select" id="q4" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not fan)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (I Love them)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q4_chosen" style="width: 157px;">
-                <a class="chosen-single chosen-default">
-                    <span>Select an Option</span>
-                    <div>
-                        <b></b>
-                    </div>
-                </a>
-                <div class="chosen-drop">
-                    <div class="chosen-search">
-                       <input class="chosen-search-input" type="text" autocomplete="off">
-                   </div>
-                 <ul class="chosen-results"></ul>
-                </div>
-            </div>
-
-
-               <h3><strong>Question 5</strong></h3>
-               <h4>Are you interested in music?</h4>
-               <select class="chosen-select" id="q5" style="display: none;">
+            <h3><strong>Question 1</strong></h3>
+            <h4>Do you like to travel?</h4>
+            <select class="chosen-select" id="q1" style="display: none;">
                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (music is everything to me)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q5_chosen" style="width: 157px;">
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (I love it !!)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q1_chosen" style="width: 157px;">
+                <a class="chosen-single chosen-default">
+                    <span>Select an Option</span>
+                    <div>
+                        <b></b>
+                    </div>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input class="chosen-search-input" type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results"></ul>
+                </div>
+            </div>
+
+            <h3><strong>Question 2</strong></h3>
+            <h4>Do you like exercising?</h4>
+            <select class="chosen-select" id="q2" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (I love it)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q2_chosen" style="width: 157px;">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <div>
@@ -151,41 +84,17 @@
             </div>
 
 
-               <h3><strong>Question 6</strong></h3>
-               <h4>Do you like mexican food?</h4>
-               <select class="chosen-select" id="q6" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (of course)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q6_chosen" style="width: 157px;">
-                <a class="chosen-single chosen-default">
-                    <span>Select an Option</span>
-                    <div>
-                        <b></b>
-                    </div>
-                </a>
-                <div class="chosen-drop">
-                    <div class="chosen-search">
-                        <input class="chosen-search-input" type="text" autocomplete="off">
-                    </div>
-                    <ul class="chosen-results"></ul>
-                </div>
-             </div>
-
-
-               <h3><strong>Question 7</strong></h3>
-               <h4>Do you like to party ?</h4>
-               <select class="chosen-select" id="q7" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (Love partying!)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q7_chosen" style="width: 157px;">
+            <h3><strong>Question 3</strong></h3>
+            <h4> Do you believe in love at first sight ?</h4>
+            <select class="chosen-select" id="q3" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Hell, yes!!)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q3_chosen" style="width: 157px;">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <div>
@@ -200,16 +109,121 @@
                 </div>
             </div>
 
-               <h3><strong>Question 8</strong></h3>
-               <h4>Do you believe that the world can change for the better?</h4>
-               <select class="chosen-select" id="q8" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (Yes!)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q8_chosen" style="width: 157px;">
+
+            <h3><strong>Question 4</strong></h3>
+            <h4>Do you like animals ?</h4>
+            <select class="chosen-select" id="q4" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not fan)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (I Love them)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q4_chosen" style="width: 157px;">
+                <a class="chosen-single chosen-default">
+                    <span>Select an Option</span>
+                    <div>
+                        <b></b>
+                    </div>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input class="chosen-search-input" type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results"></ul>
+                </div>
+            </div>
+
+
+            <h3><strong>Question 5</strong></h3>
+            <h4>Are you interested in music?</h4>
+            <select class="chosen-select" id="q5" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (music is everything to me)</option>
+            </select>
+            <div  class="chosen-container chosen-container-single" id="q5_chosen" style="width: 157px;">
+                <a class="chosen-single chosen-default">
+                    <span>Select an Option</span>
+                    <div>
+                        <b></b>
+                    </div>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input class="chosen-search-input" type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results"></ul>
+                </div>
+            </div>
+
+
+            <h3><strong>Question 6</strong></h3>
+            <h4>Do you like mexican food?</h4>
+            <select class="chosen-select" id="q6" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (of course)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q6_chosen" style="width: 157px;">
+                <a class="chosen-single chosen-default">
+                    <span>Select an Option</span>
+                    <div>
+                        <b></b>
+                    </div>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input class="chosen-search-input" type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results"></ul>
+                </div>
+            </div>
+
+
+            <h3><strong>Question 7</strong></h3>
+            <h4>Do you like to party ?</h4>
+            <select class="chosen-select" id="q7" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Love partying!)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q7_chosen" style="width: 157px;">
+                <a class="chosen-single chosen-default">
+                    <span>Select an Option</span>
+                    <div>
+                        <b></b>
+                    </div>
+                </a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input class="chosen-search-input" type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results"></ul>
+                </div>
+            </div>
+
+            <h3><strong>Question 8</strong></h3>
+            <h4>Do you believe that the world can change for the better?</h4>
+            <select class="chosen-select" id="q8" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Yes!)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q8_chosen" style="width: 157px;">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <div>
@@ -224,16 +238,17 @@
                 </div>
             </div>
 
-               <h3><strong>Question 9</strong></h3>
-               <h4>Do you believe in God?</h4>
-               <select class="chosen-select" id="q9" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (Yes, I do)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q9_chosen" style="width: 157px;">
+            <h3><strong>Question 9</strong></h3>
+            <h4>Do you believe in God?</h4>
+            <select class="chosen-select" id="q9" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Yes, I do)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q9_chosen" style="width: 157px;">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <div>
@@ -242,22 +257,23 @@
                 </a>
                 <div class="chosen-drop">
                     <div class="chosen-search">
-                        <input class="chosen-single-default"type="text" autocomplete="off">
+                        <input class="chosen-single-default" type="text" autocomplete="off">
                     </div>
                     <ul class="chosen-results"></ul>
                 </div>
             </div>
 
-               <h3><strong>Question 10</strong></h3>
-               <h4>Do you like to read?</h4>
-               <select class="chosen-select" id="q10" style="display: none;">
-                 <option value=""></option>
-                 <option value="1">1 (Not really)</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5 (Yes!!!)</option>
-               </select><div title="" class="chosen-container chosen-container-single" id="q10_chosen" style="width: 157px;">
+            <h3><strong>Question 10</strong></h3>
+            <h4>Do you like to read?</h4>
+            <select class="chosen-select" id="q10" style="display: none;">
+                <option value=""></option>
+                <option value="1">1 (Not really)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Yes!!!)</option>
+            </select>
+            <div class="chosen-container chosen-container-single" id="q10_chosen" style="width: 157px;">
                 <a class="chosen-single chosen-default">
                     <span>Select an Option</span>
                     <div>
@@ -272,25 +288,33 @@
                 </div>
             </div>
 
-               <br>
-               <br>
+            <br>
+            <br>
 
 
-               <button class="btn btn-primary btn-lg btn-block" id="submit" type="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-                Let's see my match</button>
+            <button class="btn btn-primary btn-lg btn-block" id="submit" type="submit">
+                <i class="fa fa-check-circle" aria-hidden="true"></i> Let's see my match
+            </button>
 
-               <hr>
-               <footer class="footer">
-                 <div class="container">
-                   <p><a href="/app/data/firends.js">API Friends List</a> | <a href="https://github.com/Valeria-OG/friend-finder">GitHub Repo</a></p>
-                 </div>
-               </footer>
-
-             </div>
-
-         </nav>
-
-     </div>
-
+            <hr>
+            <footer class="footer">
+                <div class="container">
+                    <p><a href="/app/data/firends.js">API Friends List</a> | <a
+                            href="https://github.com/Valeria-OG/friend-finder">GitHub Repo</a></p>
+                </div>
+            </footer>
+        </form>
+    </div>
 </body>
+
+<script>
+    $('#form_survey').on('submit', function (e) {
+        e.preventDefault();
+
+        alert("Formulario");
+
+        // Acción del formulario
+    });
+</script>
+
 </html>

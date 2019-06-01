@@ -1,15 +1,15 @@
 var path = require('path');
 
-var friends = require("../app/data/firends.js");
+var friends = require("../data/firends.js");
 
 module.exports = function(app) {
 
-   app.get("../api/firends.js",function (req, res) {
+   app.get("/api/firends",function (req, res) {
        res.json(friends);
 
    });
 
-   app.post("../api/firends.js", function (req, res) {
+   app.post("/api/firends", function (req, res) {
        console.log(req.body.scores);
 
 
