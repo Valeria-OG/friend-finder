@@ -4,4 +4,4 @@ In this activity, you'll build a compatibility-based "FriendFinder" application 
 
 [Link to the demo](https://cryptic-dusk-67478.herokuapp.com/survey)
 
-![Image of my portafolio](https://github.com/Valeria-OG/Reponsive-Portafolio/blob/master/assets/images/Val1.jpg)
+![Image of my portafolio](https://github.com/Valeria-OG/Reponsive-Portafolio/blob/master/assets/images/friends.png)
